@@ -116,22 +116,3 @@ def check_creds(self, username, password):
     except Exception as e:
         return ["error",str(e).encode("utf-8")] 
 ```
-```
- 
-## Impact
-Vary
-
-## Risk
-- Unauthorized Access
-- System Compromise
-- Operational Disruption
-- Legal and Financial Damage
-  - Compliance Failures
-  - Reputation Damage
-
-## Redemption
-- Disable, remove or change default credentials
-- Alternative Authentication Mechanisms
-
-## ID
-91f9b046-b802-425a-b71b-64c21c6b1c0f
