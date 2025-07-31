@@ -14,7 +14,7 @@ Open the webapp in your browser 127.0.0.1:5142
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/blind-sql-injection/main/content/1.png"></p>
 Right-click on the page and open Developer Tools, then Networking (This will be used to determine the time taken for the web application to respond for login)
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/blind-sql-injection/main/content/2.png"></p>
-Type in the username: ' OR RANDOMBLOB(1000000000/2)-- and password: test, if executed, the web application will be vulnerable to blind SQL injection, and that payload will cause a delay
+Type in the username: ' OR RANDOMBLOB(1000000000/2)-- and password: test, if executed, the web application will be vulnerable to blind SQL injection, and that payload will cause a delay, You can also use the same technique to find tables, users, etc. (' and (SELECT 'a' FROM users LIMIT 1)='a' or RANDOMBLOB(100000000/2)--)
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/blind-sql-injection/main/content/3.png"></p>
 The payload was executed successfully and caused a delay
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/blind-sql-injection/main/content/4.png"></p>
